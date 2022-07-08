@@ -1,7 +1,11 @@
-import React from "react";
+import { Box } from '@chakra-ui/react'
 
 const Footer = () => {
-  return <h1>Footer here</h1>;
-};
+  return (
+    <Box align="center" opacity={0.4} fontSize="sm">
+      &copy; {new Date().getFullYear()} Hunter Hamilton. All Rights Reserved.
+    </Box>
+  )
+}
 
-export default Footer;
+export default Footer
