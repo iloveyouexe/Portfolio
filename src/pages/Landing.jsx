@@ -19,11 +19,15 @@ import Paragraph from "../components/Paragraph";
 const Landing = () => {
   return (
     <Container>
+      <Heading as="h3" variant="section-title">
+        Work
+      </Heading>
       <Paragraph>
-        Hi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-        deserunt quisquam quia ad, voluptate blanditiis explicabo iste nobis
-        laboriosam, at ducimus obcaecati cumque molestiae, nulla officiis ut
-        dignissimos! Laboriosam, provident.
+        Hunter is a full-stack developer based in Birmingham with a passion for
+        building digital services/applications geared towards fluidity,
+        simplicity and streamlining processes, all while maintaing a polished
+        aesthetic. He has an obsession with planning, designing, and solving
+        real-life problems with code.
       </Paragraph>
     </Container>
   );
