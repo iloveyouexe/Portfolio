@@ -6,23 +6,66 @@ import {
   Link,
   Stack,
   Heading,
+  Image,
   Flex,
   Menu,
   MenuItem,
   MenuList,
   MenuButton,
-  IconButton,
+  chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Paragraph from "../components/Paragraph";
 import { BioSection, BioYear } from "../components/Bio";
+import profilePic from "../assets/profilepicture.png";
 
 const Landing = () => {
   return (
     <Container>
-      <Heading as="h3" variant="section-title">
-        Work
-      </Heading>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+        css={{ backdropFilter: "blur(10px)" }}
+      >
+        Hello, I'm an indie app developer based in Birmingham!
+      </Box>
+
+      <Box display={{ md: "flex" }}>
+        <Box flexGrow={1}>
+          <Heading as="h2">Hunter Hamilton</Heading>
+          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+        </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
+          <Box
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="100px"
+            h="100px"
+            display="inline-block"
+            borderRadius="full"
+            overflow="hidden"
+          >
+            <Image
+              src={profilePic}
+              alt="Picture of the author"
+              borderRadius="full"
+              width="100%"
+              height="100%"
+            />
+          </Box>
+        </Box>
+      </Box>
+
+      <Heading as="h3">Work</Heading>
       <Paragraph>
         Hunter is a full-stack developer based in Birmingham with a passion for
         building digital services/applications geared towards fluidity,
@@ -31,9 +74,7 @@ const Landing = () => {
         real-life problems with code.
       </Paragraph>
 
-      <Heading as="h3" variant="section-title">
-        Bio
-      </Heading>
+      <Heading as="h3">Bio</Heading>
       <BioSection>
         <BioYear>1997</BioYear>
         Born in Birmingham, Alabama.
