@@ -53,7 +53,13 @@ export default function Nav() {
           </Box>
 
           <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
+            <Stack direction={"row"} spacing={5}>
+              <Button onClick={(e) => (window.location.href = "/about")}>
+                About
+              </Button>
+              <Button onClick={(e) => (window.location.href = "/projects")}>
+                Projects
+              </Button>
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
@@ -97,53 +103,3 @@ export default function Nav() {
     </>
   );
 }
-
-// import {
-//   Box,
-//   Button,
-//   ButtonGroup,
-//   Container,
-//   Flex,
-//   HStack,
-//   Image,
-//   Spacer,
-// } from "@chakra-ui/react";
-// import * as React from "react";
-
-// export const navBar = () => {
-//   return (
-//     <>
-//       <Image
-//         src={brandLogo}
-//         backgroundPosition="center"
-//         backgroundRepeat="no-repeat"
-//         maxW="25%"
-//         mx="auto"
-//       />
-//       <Box as="header">
-//         <Box
-//           bg="#161316"
-//           align="center"
-//           pos="relative"
-//           justify="center"
-//           position="static"
-//         >
-//           <Container py={{ base: "4", lg: "5" }}>
-//             <HStack spacing="0" justify="space-between">
-//               <Spacer />
-//               <Flex justify="space-between" flex="1">
-//                 <ButtonGroup variant="link" spacing="6">
-//                   {["Home", "About", "Projects"].map((item) => (
-//                     <Button key={item}>{item}</Button>
-//                   ))}
-//                 </ButtonGroup>
-//               </Flex>
-//             </HStack>
-//           </Container>
-//         </Box>
-//       </Box>
-//     </>
-//   );
-// };
-
-// export default navBar;
