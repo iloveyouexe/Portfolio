@@ -18,6 +18,7 @@ import {
 import Paragraph from "../components/Paragraph";
 import { BioSection, BioYear } from "../components/Bio";
 import profilePic from "../assets/profilepicture.png";
+import brandLogo from "../assets/brandLogoMain.png";
 
 const Landing = () => {
   return (
@@ -27,9 +28,10 @@ const Landing = () => {
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+        bg={useColorModeValue("whiteAlpha.600", "whiteAlpha.200")}
         css={{ backdropFilter: "blur(10px)" }}
       >
+        <Image src={brandLogo} backgroundPosition="center" objectFit="cover" />
         Hello, I'm an indie app developer based in Birmingham!
       </Box>
 

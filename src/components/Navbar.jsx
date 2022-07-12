@@ -17,7 +17,8 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import brandLogo from "../assets/logo.png";
+import brandLogo from "../assets/brandLogoMain.png";
+import { FaGithub } from "react-icons/fa";
 
 const NavLink = ({ children }) => (
   <Link
@@ -43,16 +44,28 @@ export default function Nav() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>
             <Image
+              onClick={(e) => (window.location.href = "/")}
               src={brandLogo}
               backgroundPosition="center"
-              backgroundRepeat="no-repeat"
-              maxW="125px"
-              mx="auto"
+              objectFit="cover"
+              cursor={"pointer"}
+              width="100px"
             />
           </Box>
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={5}>
+              <Button
+                onClick={(e) =>
+                  window.open(
+                    "https://github.com/iloveyouexe/Portfolio",
+                    "_blank"
+                  )
+                }
+                leftIcon={<FaGithub />}
+              >
+                Source
+              </Button>
               <Button onClick={(e) => (window.location.href = "/about")}>
                 About
               </Button>
