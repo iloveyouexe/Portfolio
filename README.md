@@ -1,4 +1,3 @@
-
 Navbar Icon
 Landing image
 Projects page
