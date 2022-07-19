@@ -1,10 +1,27 @@
 import React from "react";
+import {
+  Container,
+  Box,
+  Text,
+  Link,
+  Stack,
+  Heading,
+  Image,
+  Flex,
+  Menu,
+  MenuItem,
+  MenuList,
+  MenuButton,
+  chakra,
+  useColorModeValue,
+} from "@chakra-ui/react";
+
 
 const About = () => {
   return (
-    <div>
-      <h1>This is the about page</h1>
-    </div>
+    <Container>
+      <h1>About</h1>
+    </Container>
   );
 };
 

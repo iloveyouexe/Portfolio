@@ -2,17 +2,8 @@ import React from "react";
 import {
   Container,
   Box,
-  Text,
-  Link,
-  Stack,
   Heading,
   Image,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Paragraph from "../components/Paragraph";
@@ -26,6 +17,7 @@ const Landing = () => {
       <Box
         borderRadius="lg"
         mb={6}
+        mt={3}
         p={3}
         textAlign="center"
         bg={useColorModeValue("whiteAlpha.600", "whiteAlpha.200")}
