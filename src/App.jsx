@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -24,7 +24,7 @@ const App = () => {
       <ChakraProvider>
         <Fonts />
         <Router>
-          <NavBar />
+          <Navbar />
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
