@@ -8,20 +8,32 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Fonts from "./components/Fonts";
 
 const App = () => {
-  return (
-    <ChakraProvider>
-      <Fonts />
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </ChakraProvider>
-  );
+  if (window.location.pathname === "/") {
+    return (
+      <ChakraProvider>
+        <Fonts />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+          </Routes>
+        </Router>
+      </ChakraProvider>
+    );
+  } else {
+    return (
+      <ChakraProvider>
+        <Fonts />
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </ChakraProvider>
+    );
+  }
 };
 
 export default App;

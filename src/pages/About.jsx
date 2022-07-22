@@ -3,15 +3,15 @@ import { Container, Box, Heading, Image, Button } from "@chakra-ui/react";
 import Paragraph from "../components/Paragraph";
 import { Section, Year } from "../components/Bio";
 import profilePic from "../assets/profilepicture.png";
+import ButtonMailto from "../components/MailButton";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Landing = () => {
   return (
     <Container>
       <Box mb={5} mt={3} p={2} textAlign="center">
-        <Heading as="h4" size="md" p={5}>
-          “If a technological feat is possible, man will do it. Almost as if
-          it's wired into the core of our being.” -- Masamune Shirow
+        <Heading as="h4" size="lg" p={5}>
+          Effort wont betray you.
         </Heading>
       </Box>
       <Box display={{ md: "flex" }}>
@@ -89,17 +89,21 @@ const Landing = () => {
         </Heading>
       </Box>
       <Box>
+        <ButtonMailto mailto="mailto:tech.hhamilton@gmail.com" /> Reach out to
+        me!
+      </Box>
+      <Box>
         <Box>
           <Button
             onClick={(e) =>
-              window.open("https://github.com/iloveyouexe/Portfolio", "_blank")
+              window.open("https://github.com/iloveyouexe", "_blank")
             }
             leftIcon={<FaGithub />}
-            mt={3}
+            my={2}
           >
-            Source
-          </Button>
-          <p>Connect with me on LinkedIn!</p>
+            Github
+          </Button>{" "}
+          Check out my github for source code on all projects!
         </Box>
       </Box>
       <Box>
@@ -111,10 +115,11 @@ const Landing = () => {
             )
           }
           leftIcon={<FaLinkedin />}
-          mt={3}
+          my={2}
         >
           LinkedIn
-        </Button>
+        </Button>{" "}
+        Connect with me on LinkedIn!
       </Box>
     </Container>
   );
