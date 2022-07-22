@@ -30,7 +30,6 @@ const NavLink = ({ children }) => (
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -66,7 +65,7 @@ export default function Nav() {
                 Projects
               </Button>
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "dark" ? <MoonIcon /> : <SunIcon />}
               </Button>
             </Stack>
           </Flex>
