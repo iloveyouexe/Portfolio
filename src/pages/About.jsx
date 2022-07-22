@@ -52,7 +52,7 @@ const Landing = () => {
       <Paragraph>
         Hunter is a full-stack developer based in Birmingham with a passion for
         building digital services/applications geared towards fluidity,
-        simplicity and streamlining processes, all while maintaing a polished
+        simplicity and streamlining processes, all while maintaining a polished
         aesthetic. He has an obsession with planning, designing, and solving
         real-life problems with code.
       </Paragraph>
