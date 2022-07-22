@@ -23,6 +23,10 @@ const customTheme = extendTheme({
     extrabold: 800,
     black: 900,
   },
+  config: {
+    initialColorMode:'dark',
+    useSystemColorMode: false,
+  }
 });
 
 export default customTheme;
