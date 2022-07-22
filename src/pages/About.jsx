@@ -100,6 +100,7 @@ const Landing = () => {
             }
             leftIcon={<FaGithub />}
             my={2}
+            w={110}
           >
             Github
           </Button>{" "}
@@ -116,6 +117,7 @@ const Landing = () => {
           }
           leftIcon={<FaLinkedin />}
           my={2}
+          w={110}
         >
           LinkedIn
         </Button>{" "}

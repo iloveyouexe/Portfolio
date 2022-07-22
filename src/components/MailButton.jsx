@@ -7,6 +7,7 @@ const ButtonMailto = ({ mailto, label }) => {
     <Button
       my={2}
       to="#"
+      w={110}
       onClick={(e) => {
         window.location.href = mailto;
         e.preventDefault();
