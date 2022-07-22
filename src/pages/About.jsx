@@ -18,7 +18,7 @@ const Landing = () => {
         <Box flexGrow={1}>
           <Heading as="h2">Hunter Hamilton</Heading>
           <Paragraph>
-            Application Developer: Javascript, React, Node, SQL, and PHP.{" "}
+            Software Developer: Javascript, React, Node, SQL, and PHP.{" "}
           </Paragraph>
         </Box>
         <Box
